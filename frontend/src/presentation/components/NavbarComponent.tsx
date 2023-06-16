@@ -33,7 +33,7 @@ const onSubmit = async(userInformation: LoginInformation) => {
       console.log(response.data,'data');
       localStorage.setItem('token',response.data.access);
       closeHandler();
-      navigate("/dashboard-material");
+      navigate("/dashboard/material");
 
       return;
     }
