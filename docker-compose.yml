@@ -27,7 +27,7 @@ services:
     volumes:
       - ./frontend:/app/frontend
 
-    command: sh -c "npm rebuild esbuild && npm i -D @swc/cli @swc/core && npm install && yarn dev "  
+    command: sh -c "npm rebuild esbuild && npm i -D @swc/cli @swc/core && yarn dev "  
 
     depends_on:
       - backend
